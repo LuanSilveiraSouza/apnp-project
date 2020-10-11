@@ -1,0 +1,27 @@
+{
+	"name": "apnp-project",
+	"version": "1.0.0",
+	"description": "Website of the APNP Project - IFRS",
+	"main": "index.js",
+	"scripts": {
+		"start": "start http://localhost:3000"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/LuanSilveiraSouza/apnp-project.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/LuanSilveiraSouza/apnp-project/issues"
+	},
+	"homepage": "https://github.com/LuanSilveiraSouza/apnp-project#readme",
+	"devDependencies": {
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-concat": "^2.6.1",
+		"gulp-sass": "^4.1.0",
+		"gulp-uglify": "^3.0.2"
+	}
+}
