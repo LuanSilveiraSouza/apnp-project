@@ -4,7 +4,8 @@
 	"description": "Website of the APNP Project - IFRS",
 	"main": "index.js",
 	"scripts": {
-		"start": "start http://localhost:3000"
+		"start": "gulp watch",
+		"build": "gulp"
 	},
 	"repository": {
 		"type": "git",

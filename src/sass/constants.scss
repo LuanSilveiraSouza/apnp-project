@@ -1,0 +1,55 @@
+$color-primary: #99FF00;
+$color-secundary: #2222AA;
+
+$font-title: 3rem;
+$font-subtitle: 2rem;
+$font-text: 1.2rem;
+
+$font-size-xl: 20px;
+$font-size-lg: 18px;
+$font-size-md: 16px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+$font-size-xss: 10px;
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 320px) {
+	body {
+		font-size: $font-size-xss;
+	}
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+	body {
+		font-size: $font-size-xs;
+	}
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+	body {
+		font-size: $font-size-sm;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+	body {
+		font-size: $font-size-md;
+	}
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+	body {
+		font-size: $font-size-lg;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	body {
+		font-size: $font-size-lg;
+	}
+}

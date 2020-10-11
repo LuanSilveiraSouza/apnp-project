@@ -15,6 +15,7 @@ gulp.task('html', async () => {
 gulp.task('sass', async () => {
 	gulp.src('./src/sass/*.scss')
 		.pipe(sass().on('error', sass.logError))
+		.pipe(concat('styles.min.css'))
 		.pipe(cleanCss())
 		.pipe(gulp.dest('./dist/css'));
 });
