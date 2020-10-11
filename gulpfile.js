@@ -3,6 +3,7 @@ const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
 const sass = require('gulp-sass');
 const cleanCss = require('gulp-clean-css');
+const imagemin = require('gulp-imagemin');
 
 gulp.task('message', async () => {
 	console.log('Gulp running...');
@@ -25,9 +26,15 @@ gulp.task('js', async () => {
 		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist'));
-})
+});
 
-gulp.task('default', gulp.series('message', 'html', 'sass', 'js'));
+gulp.task('assets', async () => {
+	gulp.src('./src/assets/*')
+		.pipe(imagemin())
+		.pipe(gulp.dest('./dist/assets'));
+});
+
+gulp.task('default', gulp.series('message', 'html', 'sass', 'js', 'assets'));
 
 gulp.task('watch', async () => {
 	gulp.watch('./src/*.html', gulp.series('html'));

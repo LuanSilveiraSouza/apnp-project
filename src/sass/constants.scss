@@ -1,5 +1,13 @@
-$color-primary: #99FF00;
-$color-secundary: #2222AA;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+$color-primary: #12664F;
+$color-primary-light: #0CF574;
+$color-secundary: #4A38BC;
+$color-secundary-light: #6153CC;
+$color-dark: #242331;
+$color-black: #000;
+$color-light: #C1CAD6;
+$color-white: #FFF;
 
 $font-title: 3rem;
 $font-subtitle: 2rem;
@@ -12,10 +20,20 @@ $font-size-sm: 14px;
 $font-size-xs: 12px;
 $font-size-xss: 10px;
 
+* {
+	//border: solid 1px red;
+}
+
 body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	min-height: 150vh;
+	width: 100vw;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+	font-family: 'Noto Sans', sans-serif;
 }
 
 @media screen and (max-width: 320px) {
