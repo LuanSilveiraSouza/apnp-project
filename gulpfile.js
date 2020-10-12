@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
 const sass = require('gulp-sass');
 const cleanCss = require('gulp-clean-css');
 const imagemin = require('gulp-imagemin');
@@ -24,6 +25,7 @@ gulp.task('sass', async () => {
 gulp.task('js', async () => {
 	gulp.src('./src/js/*js')
 		.pipe(concat('scripts.min.js'))
+		.pipe(babel({ presets: ['@babel/env'] }))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist'));
 });
