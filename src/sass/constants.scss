@@ -8,6 +8,7 @@ $color-dark: #242331;
 $color-black: #000;
 $color-light: #C1CAD6;
 $color-white: #FFF;
+$color-background: #FFF;
 
 $font-title: 3rem;
 $font-subtitle: 2rem;
@@ -33,6 +34,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	font-family: 'Noto Sans', sans-serif;
+	background-color: var(--color-background);
+}
+
+body.theme-light {
+	--color-background: #{$color-white};
+}
+
+body.theme-dark {
+	--color-background: #{$color-light};
 }
 
 @media screen and (max-width: 320px) {

@@ -24,8 +24,8 @@ gulp.task('sass', async () => {
 
 gulp.task('js', async () => {
 	gulp.src('./src/js/*js')
-		.pipe(concat('scripts.min.js'))
 		.pipe(babel({ presets: ['@babel/env'] }))
+		.pipe(concat('scripts.min.js'))
 		.pipe(uglify())
 		.pipe(gulp.dest('./dist'));
 });
