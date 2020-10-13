@@ -28,7 +28,7 @@ body {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	min-height: 150vh;
+	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -61,7 +61,7 @@ body.theme-dark {
 	--color-secundary: #{$color-primary};
 	--color-secundary-light: #{$color-primary-light};
 	--color-background: #{$color-dark};
-	--color-background-secundary: #{$color-light};
+	--color-background-secundary: #{$color-white};
 }
 
 @media screen and (max-width: 320px) {
