@@ -1,7 +1,7 @@
 @import './constants';
 
 header {
-	background-color: $color-primary;
+	background-color: var(--color-primary);
 	height: 10vh;
 	padding: 0 2%;
 	display: flex;
@@ -9,14 +9,49 @@ header {
 	justify-content: space-around;
 
 	.header-title {
-		color: $color-white;
+		color: var(--color-white);
 	}
 
 	nav {
 		flex: 1;
 		display: flex;
 		justify-content: flex-end;
+		align-items: center;
+		height: 100%;
+
+		.nav-item {
+			position: relative;
+			width: 5rem;
+			height: 50%;
+			margin: 0 2%;
+			background-color: var(--color-white);
+			border: solid 1px var(--color-primary-light);
+			border-radius: 34px;
+			display: flex;
+			align-items: center;
+
+			input {
+				opacity: 0;
+				width: 0;
+				height: 0;
+			}
+
+			span {
+				cursor: pointer;
+				color: var(--color-black);
+				position: absolute;
+				left: 10px;
+			}
+
+			input:checked + span:not(#lang-icon) {
+				transform: translateX(2.5rem);
+			}
+		}
 	}
+}
+
+main {
+	color: var(--color-background-secundary);
 }
 
 footer {

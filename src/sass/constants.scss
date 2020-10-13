@@ -8,7 +8,6 @@ $color-dark: #242331;
 $color-black: #000;
 $color-light: #C1CAD6;
 $color-white: #FFF;
-$color-background: #FFF;
 
 $font-title: 3rem;
 $font-subtitle: 2rem;
@@ -35,14 +34,34 @@ body {
 	flex-direction: column;
 	font-family: 'Noto Sans', sans-serif;
 	background-color: var(--color-background);
+	transition: all 0.3s;
+
+	* {
+		transition: all 0.3s ease-out;
+	}
+}
+
+:root {
+	--color-white: #{$color-white};
+	--color-black: #{$color-black};
 }
 
 body.theme-light {
+	--color-primary: #{$color-primary};
+	--color-primary-light: #{$color-primary-light};
+	--color-secundary: #{$color-secundary};
+	--color-secundary-light: #{$color-secundary-light};
 	--color-background: #{$color-white};
+	--color-background-secundary: #{$color-dark};
 }
 
 body.theme-dark {
-	--color-background: #{$color-light};
+	--color-primary: #{$color-secundary};
+	--color-primary-light: #{$color-secundary-light};
+	--color-secundary: #{$color-primary};
+	--color-secundary-light: #{$color-primary-light};
+	--color-background: #{$color-dark};
+	--color-background-secundary: #{$color-light};
 }
 
 @media screen and (max-width: 320px) {
