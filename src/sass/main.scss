@@ -11,6 +11,11 @@ main {
 		padding: 1% 5%;
 		min-height: 50vh;
 
+		h1 {
+			font-weight: bold;
+			font-size: $font-title;
+		}
+
 		p {
 			line-height: 2rem;
 			font-size: $font-text;
@@ -51,14 +56,34 @@ main {
 
 			h1 {
 				margin: 0 0 5% 5%;
-				font-weight: bold;
-				font-size: $font-title;
 			}
 
 			p {
 				margin-left: 10%;
 				width: 80%;
 			}
+		}
+	}
+
+	section.table {
+		table {
+			width: 100%;
+
+			caption{
+				font-weight: bold;
+				font-size: $font-subtitle;
+				text-align: center;
+			}
+
+			* {
+				text-align: left;
+				padding: 1%;
+			}
+		}
+
+		table, caption, th, td {
+			border: solid 1px var(--color-background-secundary);
+			border-collapse: collapse;
 		}
 	}
 }
