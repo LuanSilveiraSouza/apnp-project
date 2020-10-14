@@ -1,0 +1,30 @@
+@import './constants';
+
+footer {
+	margin-top: auto;
+	height: 15vh;
+	width: 100%;
+	background-color: $color-light;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	.footer-link {
+		height: 100%;
+		width: 20rem;
+		display: flex;
+		align-items: center;
+		margin-left: 5%;
+
+		.link-img {
+			width: 100%;
+		}
+	}
+
+	.footer-authors {
+		flex: 1;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+}

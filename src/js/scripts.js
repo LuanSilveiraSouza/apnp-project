@@ -31,7 +31,7 @@ langSwitcher.addEventListener('click', () => {
 	}
 })
 
-const ctx = document.querySelector('#myCanvas');
+/*const ctx = document.querySelector('#myCanvas');
 const chart = new Chart(ctx , {
 	type: 'bar',
 	data: {
@@ -55,4 +55,4 @@ const chart = new Chart(ctx , {
 	options: {
 		responsive: true
 	}
-});
+});*/

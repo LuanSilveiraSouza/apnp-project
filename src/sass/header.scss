@@ -44,56 +44,17 @@ header {
 				padding: 10%;
 				border-radius: 30px;		
 			}
+			span#lang-icon {
+				left: 0.5rem;
+			}
+
+			span:not(#lang-icon) {
+				background-color: var(--color-primary);
+			}
 
 			input:checked + span:not(#lang-icon) {
 				transform: translateX(2.5rem);
-				background-color: var(--color-primary);
-				
 			}
 		}
-	}
-}
-
-main {
-	padding: 5% 0;
-	color: var(--color-background-secundary);
-
-	section {
-		padding: 0 5%;
-
-		.canvas-container {
-			position: relative;
-			height: 50%;
-			width: 50%;
-		}
-	}
-}
-
-footer {
-	margin-top: auto;
-	height: 15vh;
-	width: 100%;
-	background-color: $color-light;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-
-	.footer-link {
-		height: 100%;
-		flex: 1;
-		display: flex;
-		align-items: center;
-		margin-left: 5%;
-
-		.link-img {
-			width: 20rem;
-		}
-	}
-
-	.footer-authors {
-		flex: 2;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
 	}
 }
