@@ -25,6 +25,19 @@ main {
 		.canvas-container {
 			width: 80vw;
 		}
+
+		.canvas-row {
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			.canvas-container {
+				width: 70%;
+			}
+
+			p {
+				width: 30%;
+			}
+		}
 	}
 
 	section.intro {
