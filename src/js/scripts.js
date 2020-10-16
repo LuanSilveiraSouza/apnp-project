@@ -45,6 +45,10 @@ langSwitcher.addEventListener('click', () => {
 	}
 });
 
+translate[0].addEventListener('click', () => {
+	translate[0].innerHTML = 'Feliz Aniversário Iris!'
+})
+
 const graph1 = document.querySelector('#graph-1');
 const chart = new Chart(graph1, {
 	type: 'line',
