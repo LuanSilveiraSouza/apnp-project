@@ -6,6 +6,7 @@ main {
 	flex-direction: column;
 	align-items: center;
 	padding: 1% 0 5% 0;
+	width: 100%;
 
 	section {
 		padding: 1% 5%;
@@ -35,7 +36,7 @@ main {
 			justify-content: space-between;
 			width: 100%;
 			.canvas-container {
-				width: 70%;
+				width: 60%;
 			}
 
 			p {
@@ -83,10 +84,20 @@ main {
 	}
 
 	section.table {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+
+		p {
+			padding: 0 5%;
+		}
+
 		table {
 			width: 100%;
+			overflow-x: auto;
 
-			caption{
+			caption {
 				font-weight: bold;
 				font-size: $font-subtitle;
 				text-align: center;
@@ -98,9 +109,57 @@ main {
 			}
 		}
 
-		table, caption, th, td {
+		table,
+		caption,
+		th,
+		td {
 			border: solid 1px var(--color-background-secundary);
 			border-collapse: collapse;
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.canvas-row {
+		flex-direction: column;
+
+		.canvas-container {
+			width: 100vw !important;
+		}
+
+		p {
+			width: 100% !important;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	section.intro {
+		width: 100% !important;
+
+		.intro-content {
+			h1 {
+				font-size: 1.2rem;
+			}
+
+			p {
+				line-height: 1.5rem;
+				font-size: 1rem;
+			}
+		}
+	}
+
+	.canvas-row {
+		.canvas-container {
+			width: 70vw !important;
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	section.table {
+		table {
+			width: 50%;
 		}
 	}
 }

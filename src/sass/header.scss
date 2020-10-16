@@ -58,3 +58,9 @@ header {
 		}
 	}
 }
+
+@media screen and (max-width: 375px) {
+	.header-title {
+		font-size: 1rem;
+	}
+}

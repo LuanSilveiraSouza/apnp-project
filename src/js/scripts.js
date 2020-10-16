@@ -181,7 +181,8 @@ const portuguese = [
 	'No gráfico 3 vemos uma comparação entre quantidade de pessoas trabalhando em home office, pessoas que não procuraram trabalho por causa da pandemia e pessoas afastadas de seus trabalhos. Nesse gráfico podemos observar que os maiores números são de pessoas que não procuraram trabalhos e este número por sua vez é quase constante, diminuindo e aumentando pouco, assim como o de trabalhadores em home office, onde quase não há mudanças. Por fim, o número de pessoas afastadas diminui gradualmente (aos poucos as pessoas voltam para seus trabalhos presenciais).',
 	'Conclusão',
 	'Após a leitura e compreensão desses dados, podemos tirar diversas conclusões sobre o trabalho na pandemia. Com o ínicio da pandemia houve uma diminuição drástica no trabalho presencial, o que fez muitos migrarem para o trabalho em home office, porém este só pode ser aplicado em trabalhos intelectuais (o que explica o número de trabalhadores nessa modalidade não alterar muito, não há necessidade de ser presencial), o que faz muitos trabalhadores que precisam atuar presencialmente sejam afastados ou demitidos. Conforme o tempo passa, os trabalhadores acabam voltando para o presencial, o que faz diminuir o número de afastados. Ainda sim, o número de trabalhadores demitidos continua consideravelmente constante (por causa de uma crise financeira, o número de funcionários diminui em muitos estabelecimentos).',
-	'Esperamos que com  essa pesquisa tenhamos mostrado as modificações do funcionamento do trabalho pela pandemia e as adaptações que nossa sociedade realiza, a pandemia trouxe diversas dificuldades e afetou muitas pessoas, principalmente a classe trabalhadora.'
+	'Esperamos que com  essa pesquisa tenhamos mostrado as modificações do funcionamento do trabalho pela pandemia e as adaptações que nossa sociedade realiza, a pandemia trouxe diversas dificuldades e afetou muitas pessoas, principalmente a classe trabalhadora.',
+	'Feito por:',
 ]
 
 const english = [
@@ -220,4 +221,5 @@ const english = [
 	'Conclusion',
 	`After reading and understanding these things, we can take several conclusions on pandemic work. As the pandemic started there was a drastic decrease in presential work, that make a lot of people go to home office, however this can only be apply on intellectual work (which explain the number of workers doesn't change a lot, there’s no need to be presential), which make many workers that need to operate presential be withdrawn or fired. As the time went by, the workers ended up coming back to presential work, which made a decrease in the numbers of withdrawn workers. Nevertheless, the number of workers that got fired keeps increasing.`,
 	'We hope that with this research, we have shown the modifications on the operation at work through the pandemic and the adaptations that our society accomplishes. The pandemic brought us much trouble and affected many lives, mostly the working class.',
+	'Made by:',
 ]
