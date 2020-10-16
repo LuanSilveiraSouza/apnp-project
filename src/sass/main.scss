@@ -11,6 +11,10 @@ main {
 		padding: 1% 5%;
 		min-height: 50vh;
 
+		#translate {
+			transition: opacity 0.2s;
+		}
+
 		h1 {
 			font-weight: bold;
 			font-size: $font-title;
@@ -53,6 +57,8 @@ main {
 			height: 100%;
 			position: absolute;
 			z-index: -1;
+			filter: blur(2px);
+			-webkit-filter: blur(2px);
 		}
 
 		.intro-content {
